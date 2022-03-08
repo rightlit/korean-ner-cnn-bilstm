@@ -8,11 +8,13 @@ import argparse
 import pickle
 
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
+
 from CNN_BiLSTM import CNNBiLSTM
 from data_loader import get_loader
 from sklearn.metrics import classification_report
 from sklearn.metrics import f1_score
 
+from data_utils import Vocabulary
 
 
 def main(args):
